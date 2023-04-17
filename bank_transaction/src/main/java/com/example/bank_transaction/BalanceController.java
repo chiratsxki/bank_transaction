@@ -28,7 +28,7 @@ public class BalanceController {
 
     @PostMapping({"/transfer"})
     public void transfer(@RequestBody TransferBalance transferBalance) {
-        bankService.makeTrancfer(transferBalance);
+        bankService.makeTransfer(transferBalance);
     }
 
     @ExceptionHandler(IllegalArgumentException.class)
